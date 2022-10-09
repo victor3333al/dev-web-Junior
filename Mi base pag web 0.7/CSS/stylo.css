@@ -1,0 +1,195 @@
+@font-face {
+	font-family: "NotoSansJP-Bold";
+	src: url(../Fonts/NotoSansJP-Bold.otf);
+}
+@font-face {
+	font-family: "NotoSansJP-Regular";
+	src: url(../Fonts/NotoSansJP-Regular.otf);
+}
+@font-face {
+	font-family: "NotoSansJP-Light" ;
+	src: url(../Fonts/NotoSansJP-Light.otf);
+}
+body {
+    font-family: "NotoSansJP-Bold";
+	src: url(../Fonts/NotoSansJP-Bold.otf);
+	background-color: #f6f2ee;
+}
+	/* Base */
+.angry-grid {
+	display: grid; 
+ 
+	grid-template-rows: 100px 50px 600px 500px 600px 600px 600px;
+	grid-template-columns: auto;
+	
+	/* Separa los contenidos */
+	gap: 0px;
+
+	height: 100%;
+	
+ }
+   /* header*/
+ #Title__logo {
+
+	background-color: #3b3b3b;
+	color: white;
+	/* centra el texto en el grid */
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	grid-row-start: 1;
+	grid-column-start: 1;
+
+	grid-row-end: 2;
+	grid-column-end: 2;
+	
+ }
+ 	/* banner */
+ #banner__image {
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/prueba_hero_image.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+ 	position: relative;
+	text-align: center;
+	font-family: "NotoSansJP-Regular";
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	grid-row-start: 3;
+	grid-column-start: 1;
+ 
+	grid-row-end: 4;
+	grid-column-end: 2;
+	
+ }
+ 	/* navNuevo	 */
+
+	.menu-bar {
+  background-color: #1988f7;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.item {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+}
+
+.item.title {
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+	/* Nav Original	 */
+
+	/* navbar*/
+ /* #Navbar {
+
+	font-family: "NotoSansJP-Regular";
+	text-align: center;
+	grid-row-start: 2;
+	grid-column-start: 1;
+ 
+	grid-row-end: 3;
+	grid-column-end: 2;
+	
+ }
+ #Navbar ul{
+	padding: 0px 0px 0px 0px;
+	background-color: #0eda63;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	
+ }
+ #Navbar ul li {
+	font-size: 22px;
+	margin-left: 20px;
+	list-style: none;
+	/* background-color: #cc3535; 
+	font-family: "NotoSansJP-Regular";
+	text-align: center;	
+ }*/
+
+ /*
+ .home{
+	 margin-left: 200px;
+	display: flex;
+	
+  	justify-content: center;
+  	align-items: center;
+ } */
+
+
+ 	/* service */
+ #Servicios {
+
+	font-family: "NotoSansJP-Regular";
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color: #9b9895; 
+	grid-row-start: 4;
+	grid-column-start: 1;
+ 
+	grid-row-end: 5;
+	grid-column-end: 2;
+	
+ }
+ 	/* top-blogs */
+ #Top-blogs {
+
+	font-family: "NotoSansJP-Regular";
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color: #918273; 
+	grid-row-start: 5;
+	grid-column-start: 1;
+ 
+	grid-row-end: 6;
+	grid-column-end: 2;
+	
+ }
+ 	/* contact-map */
+ #Contact-map {
+
+	font-family: "NotoSansJP-Regular";
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color: #f6f2ee; 
+	grid-row-start: 6;
+	grid-column-start: 1;
+ 
+	grid-row-end: 7;
+	grid-column-end: 2;
+	
+ }
+ 	/* footer */
+ #footer {
+
+	font-family: "NotoSansJP-Regular";
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color: #000000;
+	color: white;
+	grid-row-start: 7;
+	grid-column-start: 1;
+ 
+	grid-row-end: 8;
+	grid-column-end: 2;
+	
+ }
